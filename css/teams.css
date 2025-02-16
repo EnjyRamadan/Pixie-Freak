@@ -1,0 +1,447 @@
+
+/* by haidy */
+
+:root{
+    --red:rgba(180, 3, 3, 1);
+    --lightGrey:#333;
+    --darkGrey:#1a1a20;
+    --mediumGrey:#202028;
+    --mainFont: 'Cairo', sans-serif;
+}
+
+*{
+  font-family: var(--mainFont);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white; 
+  z-index: 2;
+  scroll-behavior: smooth;
+  overscroll-behavior: smooth;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: -10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    border-radius: 15px;
+  }
+  /* scrollbar done */
+
+  /* nav */
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    /* z-index: -2; */
+    background-image: url(../images/pubgg.jpg);
+    background-attachment: fixed;  
+    animation-name: images;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes images{
+    25%{
+        background-image: url(../images/fortnite.jpg);
+    }
+    50%{
+        background-image: url(../images/vi.jpg);
+      
+    }
+    75%{
+        background-image: url(../images/cod.jpg);
+    }
+    100%{
+        background-image: url(../images/pubgg.jpg);
+    }
+}
+.container{
+    position: relative;
+    padding: 2% 5%;
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba(180, 3, 3, 0.356),rgba(0, 0, 0, 0.422),rgba(0, 0, 0, 0.322),rgba(0, 0, 0, 0.222)); 
+    flex-wrap: wrap;
+    /* z-index: -1; */
+    width: 100%;
+    
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 100;
+   flex-wrap: wrap;
+   
+}
+
+.nav a{
+    font-size: 15.5px;
+    position: relative;
+    z-index: 100 !important;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.nav-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav a:not(.bars,.drop-menu):after{
+    content: " ";
+    width:0%;
+    position: absolute;
+    height: 1.5px;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    background-color:var(--red);
+    transition: all 0.5s;
+}
+
+.nav a:hover::after{
+    width:50%;
+}
+
+.nav a:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+.drop{
+   display: none;
+   position: relative;
+   opacity: 0;
+   z-index: 100;
+   top: 25px;
+   animation-name: dropAppear;
+   animation-timing-function: linear;
+   animation-duration: 0.5s;
+   animation-fill-mode: forwards;
+
+}
+
+@keyframes dropAppear{
+    from{
+        display: none;
+        opacity: 0;
+    }
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+@keyframes dropHide{
+    from{
+        display: block;
+        opacity: 1;
+    }
+  to{
+    display: none;
+    opacity: 0;
+  }
+}
+
+.drop ul li{
+    background-color: rgba(0, 0, 0, 0.399);
+    padding: 2px 20px;
+    margin-top: 4px;
+    width: 180px;
+    z-index: 100;
+
+}
+.drop ul{
+    list-style: none;
+   position: absolute;
+   right: 0;
+  z-index: 1000;
+}
+.drop ul a{
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.bars i{
+    z-index: 100;
+    transition: all 0.5s;
+    padding: 0 2px;
+}
+.bars i:hover{
+    color: var(--red);
+}
+.search{
+    padding: 5px 20px;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.search:hover{
+  color: var(--red);
+}
+
+.search::after{
+    content: " ";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--red);
+}
+
+.search:hover{
+    color: var(--red);
+}
+
+
+
+.logo{
+    z-index: 100;
+}
+
+.logo img{
+    width: 275px;
+}
+
+/* nav done */
+
+/* nav done */
+form input{
+    filter: grayscale(1);
+}
+
+/* background of teams */
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+.title h1{
+    font-size: 65px;
+    z-index: 1;
+    
+
+}
+.title h5{
+    font-size: 17px;
+    color: var(--red);
+    z-index: 1;
+    
+    font-weight: 700;
+}
+
+/* background of teams is done */
+
+/* teams */
+
+.main{
+    background-color: var(--mediumGrey);
+    padding: 70px 50px 155px 50px;
+}
+.check label{
+    padding-right: 10px;
+    font-size: 17px;
+}
+.main .info{
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.main .info .txt h3{
+    font-size: 30px;
+
+}
+.main .info .txt h5{
+    font-size: 15px;
+    color: #eee;
+}
+
+
+.main .teams{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.main .teams .team{
+    background-color: var(--darkGrey);
+    width: 376px;
+    min-height: 230px;
+    margin-top: 30px;
+}
+
+.main .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    transition: all 0.5s;
+}
+.main .team:hover{
+    transform: translateY(-7px);
+}
+.main .members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .member{
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 7.5px;
+}
+
+.main .members .one{
+    background-image: url(../images/member/m1.jpg);
+}
+
+.main .members .two{
+    background-image: url(../images/member/m2.jpg);
+}
+
+.main .members .three{
+    background-image: url(../images/member/m3.jpg);
+}
+
+.main .members .four{
+    background-image: url(../images/member/m4.jpg);
+}
+
+.main .members .d.one{
+    background-image: url(../images/member/hanafy.jpg);
+    background-size: cover;
+}
+
+.main .members .d.two{
+    background-image: url(../images/member/boo.jpg);
+    background-size: cover;
+}
+
+.main .members .d.three{
+    background-image: url(../images/member/beladn.jpg);
+    background-size: cover;
+}
+
+.main .members .d.four{
+    background-image: url(../images/member/farouk.jpg);
+    background-size: cover;
+}
+
+.main .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    /* padding: 15px; */
+}
+.main .team h5{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+.main .team h6{
+    color: #eee;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.main .bottom div:first-child p:first-of-type{
+    color: rgb(119, 118, 118);
+    font-size: 12px;
+    font-weight: 500;
+}
+.main .bottom div{
+line-height: 1em;
+text-align: left;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+flex-direction: column;
+padding: 10px;
+ 
+}
+
+.main .bottom div:first-child{
+    background-color: var(--lightGrey);
+}
+.main .bottom div:last-child{
+ background-color: var(--red);
+ position: relative;
+ transition: all 0.5s;
+
+}
+.main .bottom div:last-child::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: rgba(180, 3, 3, 0.4);
+    width: 0%;
+    transition: all 0.4s;
+}
+.main .bottom div:last-child:hover::before{
+    width: 25%;
+    left: -25px;
+}
+.main .bottom a{
+    text-decoration: none;
+}
+
+/* .back-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -5;
+} */

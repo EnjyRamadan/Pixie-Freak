@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tournaments</title>
+    <link rel="stylesheet" href="../css/tournaments.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="icon" href="../images/blacklogo.ico">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/6b11d4a153.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+
+    <div class="cover"></div>
+
+    <div class="container" id="nav">
+      <div class="nav">
+        <div class="logo"><img src="../images/logo.png" alt="logo" /></div>
+        <div class="nav-main">
+          
+          <a href="../html/home.html">HOME</a>
+          <a href="../html/news2.html">NEWS</a>
+          <a href="../html/about.html">ABOUT US</a>
+          <a href="../html/tournaments.html">TOURNAMENTS</a>
+          <a href="teams.html">TEAMS</a>
+          <a href="../html/streams.html">STREAMS</a>
+          <a href="../html/matches.html">MATCHES</a>
+              
+              <a class="bars"><i class="fa fa-bars" onclick="menu()" id="bars"></i></a>
+  
+              <div class="drop" id="drop">
+                <ul>
+                   <<li ><a class="drop-menu" href="../html/sponsers.html">SPONSERS</a></li>
+                   <li ><a class="drop-menu" href="../html/gallery.html">GALLERY</a></li>
+                   <li><a class="drop-menu" href="../html/feedback.html">Feedback</a></li>
+                   <li><a class="drop-menu" href="../html/contact.html">Contact Us</a></li>
+                   <li ><a class="drop-menu" href="../html/signLoginForm.html">SIGN UP / LOG IN</a></li>
+                </ul>
+              </div>
+         
+              <i class="fa-solid fa-magnifying-glass search"></i>
+         
+           
+        </div>
+     </div>
+
+
+      <div class="title">
+        
+
+        <div class="txt">
+          <h1>Our tournaments</h1>
+          <h5>This is where you can browse through our tournaments</h5>
+        </div>
+
+
+        <div class="filter">
+
+          
+            <div class="all game" onclick="allClicked()" id="all" onmouseover="hoverAll()" onmouseout="nohoverAll()">
+                <i class="fa-solid fa-list"></i>
+            </div>
+          <div class="pubg game" onclick="pubgClicked()" id="pubg" onmouseover="hoverPubg()" onmouseout="nohoverPubg()">
+            <img
+              src="../images/tournamnts/pubg-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="fort game" onclick="fortClicked()" id="fort" onmouseover="hoverFort()" onmouseout="nohoverFort()">
+            <img src="../images/tournamnts/Fortnite-Logo.png" alt="" />
+          </div>
+          <div class="lol game" onclick="lolClicked()" id="lol" onmouseover="hoverLol()" onmouseout="nohoverLol()">
+            <img src="../images/tournamnts/League_of_Legends_Logo.png" alt="" />
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="tours">
+            <div class="tour" id="Fort">
+              <div class="img">
+                <img src="../images/tournamnts/backfort1.jpg" alt="">
+              </div>
+                <div class="txt fort">
+    
+                    <h5><span>Manila masters Toronto 4v4 </span><br> OCT.09.2018 - 02:35 PM </h5>
+                    <img src="../images/tournamnts/Fortnite-Logo.png" alt="">
+    
+                </div>
+    
+                <div class="bottom">
+                    <div class="info">
+                        <table>
+                            <tr><td>2 GROUPS</td><td>PLAYOUT</td> <td>PRIZE POOL</td></tr>
+                            <tr><td>40 TEAMS</td> <td>ROUND ROBIN</td> <td>$ 450 USD</td></tr>
+                        </table>
+                    </div>
+                    <div class="btn"><a href="../html/tourinfo.html"><p>More Details</p> <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+    
+    
+            <div class="tour" id="Pubg">
+              <div class="img">
+                <img src="../images/tournamnts/backpubg.jpg" alt="">
+              </div>
+                <div class="txt pubg">
+    
+                    <h5><span>EU WINNERS League - Starter Division</span> <br> OCT.25.2018 - 01:06 PM </h5>
+                    <img src="../images/tournamnts/pubg-logo.png" alt="">
+    
+                </div>
+    
+                <div class="bottom">
+                    <div class="info">
+                        <table>
+                            <tr><td>2 GROUPS</td> <td>PLAYOUT</td> <td>PRIZE POOL</td></tr>
+                            <tr><td>50 TEAMS</td> <td>ROUND ROBIN</td> <td>$ 750 USD</td></tr>
+                        </table>
+                    </div>
+                    <div class="btn"><a href="../html/tourinfo.html"><p>More Details</p> <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+    
+    
+            <div class="tour" id="Lol">
+              <div class="img">
+                <img src="../images/tournamnts/backlol.jpg" alt="">
+              </div>
+                <div class="txt lol">
+    
+                    <h5><span>ENDPOINTGG VS CEX ESPORTS [2]</span> <br> OCT.10.2018 - 02:35 PM</h5>
+                    <img src="../images/tournamnts/League_of_Legends_Logo.png" alt="" >
+    
+                </div>
+    
+                <div class="bottom">
+                    <div class="info">
+                        <table>
+                            <tr><td>2 GROUPS</td> <td>PLAYOUT</td> <td>PRIZE POOL</td></tr>
+                            <tr><td>62 TEAMS</td> <td>ROUND ROBIN</td> <td>$ 1000 USD</td></tr>
+                        </table>
+                    </div>
+                    <div class="btn"><a href="../html/tourinfo.html"><p>More Details</p> <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+    
+    
+            <div class="tour" id="Fort2">
+              <div class="img">
+                <img src="../images/tournamnts/backfort2.jpg" alt="">
+              </div>
+                <div class="txt fort">
+    
+                    <h5><span>TORNEO SPANISH PRO LEAGUE </span><br> OCT.09.2018 - 02:35 PM</h5>
+                    <img src="../images/tournamnts/Fortnite-Logo.png" alt="img">
+    
+                </div>
+    
+                <div class="bottom">
+                    <div class="info">
+                        <table>
+                            <tr><td>2 GROUPS</td> <td>PLAYOUT</td> <td>PRIZE POOL</td></tr>
+                            <tr><td>32 TEAMS</td> <td>ROUND ROBIN</td> <td>$ 300 USD</td></tr>
+                        </table>
+                    </div>
+                    <div class="btn"><a href="../html/tourinfo.html"><p>More Details</p> <i class="fa-solid fa-arrow-right"></i></a></div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+    <footer class="footer">
+      <div class="cotain">
+          <div class="row">
+              <div class="footer-col">
+                  <img src="../images/logo.png" width="250">
+                  <div class="social">
+                      <a href="#" class="social-icon" id="ic1">
+                          <i class="fa-brands fa-facebook"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                          <i class="fa-brands fa-google"></i>
+                      </a>
+                      <a href="#" class="social-icon">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                  </div>
+              </div>
+              <div class="footer-col1" class="ic">
+  
+                  <ul>
+                      <li><i class="fa-sharp fa-solid fa-floppy-disk"></i>
+                      </li>
+  
+  
+                      <li><i class="fa-sharp fa-solid fa-bookmark"></i>
+                      </li>
+  
+  
+                      <li><i class="fa-sharp fa-solid fa-fire"></i>
+                      </li>
+  
+                      <li><i class="fa-solid fa-bell"></i>
+  
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>GET IN TOUCH</h4>
+                  <ul>
+                      <li>
+                          <h3 class="text">Press departement</h3>
+                          <p>press@pixiefusion.com </p>
+                      </li>
+  
+  
+                      <li>
+                          <h3>Sponsorships</h3>
+                          <p>press@pixiefusion.com</p>
+                      </li>
+  
+  
+                      <li>
+                          <h3>Marketing</h3>
+                          <p>press@pixiefusion.com</p>
+                      </li>
+  
+  
+                      <li>
+                          <h3>Media</h3>
+                          <p>press@pixiefusion.com</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>LATEST NEWS</h4>
+                  <ul>
+                      <li><a href="../html/news.html"> World's 2021 quarterfinal Predections</a></li>
+                      <li><a href="../html/news2.html">View more here <i
+                                  class="fa-solid fa-arrow-right"></i></a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>MENU LEFT</h4>
+                  <ul>
+                      <li><a href="../html/news2.html">NEWS</a></li>
+                      <li><a href="../html/matches.html">Matches</a></li>
+                      <li><a href="../html/gallery.html">Gallary</a></li>
+                      <li><a href="../html/about.html">About</a></li>
+                      <li><a href="../html/feedback.html">feedback</a></li>
+  
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>MENU RIGHT</h4>
+                  <ul>
+                      <li><a href="../html/tournaments.html">Tournaments</a></li>
+                      <li><a href="../html/teams.html">Teams</a></li>
+                      <li><a href="../html/streams.html">streams</a></li>
+                      <li><a href="../html/sponsers.html">Sponsors</a></li>
+                      <li><a href="../html/contact.html">Contact us</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="../js/tournaments.js"></script>
+  </body>
+</html>

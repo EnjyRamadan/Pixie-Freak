@@ -1,0 +1,567 @@
+
+/* by haidy */
+
+:root{
+    --red:rgba(180, 3, 3, 1);
+    --lightGrey:#333;
+    --darkGrey:#1a1a20;
+    --mediumGrey:#202028;
+    --mainFont: 'Cairo', sans-serif;
+}
+
+*{
+  font-family: var(--mainFont);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white; 
+  z-index: 2;
+  scroll-behavior: smooth;
+  overscroll-behavior: smooth;
+}
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: -10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #444; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    border-radius: 15px;
+  }
+  /* scrollbar done */
+
+  /* nav */
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    /* z-index: -2; */
+    background-image: url("../images/matches/florian-olivo-Mf23RF8xArY-unsplash.jpg");
+
+    background-attachment: fixed;  
+    animation-name: images;
+    animation-duration: 30s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+}
+
+.container{
+    position: relative;
+    padding: 2% 5%;
+    height: 100vh;
+    background-image: linear-gradient(to left,rgba(180, 3, 3, 0.156),rgba(0, 0, 0, 0.122),rgba(0, 0, 0, 0.022),rgba(0, 0, 0, 0.022)); 
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+
+    
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 100;
+    flex-wrap: wrap;
+
+   
+}
+
+.nav a{
+    font-size: 15.5px;
+    position: relative;
+    z-index: 100 !important;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.nav-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.nav a:not(.bars,.drop-menu):after{
+    content: " ";
+    width:0%;
+    position: absolute;
+    height: 1.5px;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    background-color:var(--red);
+    transition: all 0.5s;
+}
+
+.nav a:hover::after{
+    width:50%;
+}
+
+.nav a:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+.drop{
+    display: none;
+    position: relative;
+    opacity: 0;
+    z-index: 100;
+    top: 25px;
+    animation-name: dropAppear;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+ 
+ }
+ 
+
+.drop ul li{
+    background-color: rgba(0, 0, 0, 0.399);
+    padding: 2px 20px;
+    margin-top: 4px;
+    width: 180px;
+    z-index: 100;
+
+}
+.drop ul{
+    list-style: none;
+   position: absolute;
+   right: 0;
+  z-index: 1000;
+}
+.drop ul a{
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.bars i{
+    z-index: 100;
+    transition: all 0.5s;
+    padding: 0 2px;
+}
+.bars i:hover{
+    color: var(--red);
+}
+.search{
+    padding: 5px 20px;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    z-index: 100;
+}
+
+.search:hover{
+  color: var(--red);
+}
+
+.search::after{
+    content: " ";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--red);
+}
+
+.search:hover{
+    color: var(--red);
+}
+
+
+
+.logo{
+    z-index: 100;
+}
+
+.logo img{
+    width: 275px;
+}
+@keyframes dropAppear{
+    from{
+        display: none;
+        opacity: 0;
+    }
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+@keyframes dropHide{
+    from{
+        display: block;
+        opacity: 1;
+    }
+  to{
+    display: none;
+    opacity: 0;
+  }
+}
+
+/* nav done */
+
+
+
+/* background of teams */
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+.title h1{
+    font-size: 65px;
+    z-index: 1;
+    /* animation: glitch 0.3s infinite; */
+    
+
+}
+.title h5{
+    font-size: 17px;
+    color: var(--red);
+    z-index: 1;
+    
+    font-weight: 700;
+}
+
+video{
+    position: absolute;
+   width: 110%;
+   top: -2px;
+   left: 0;
+   z-index: -2;
+
+}
+
+/* background of teams is done */
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--lightGrey); */
+    background-image: url(../images/matches/back.png);
+    background-attachment: fixed;
+    width: 100%;
+    padding: 100px 0px;
+ 
+
+}
+
+.matches{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.matches .header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: var(--red);
+    margin-bottom: 3.5PX;
+}
+.matches .down a{
+    text-decoration: none;
+}
+.matches .header p{
+  padding: 15px  45px;
+  text-align: center;
+  transition: color 1s;
+  background-color: transparent;
+  position: relative;
+  transition: all 0.5S;
+}
+.matches .header p:hover{
+   /* text-shadow: 0 0px 0px transparent, 0 0 1px var(--red), 0 0px 1px transparent, 0 0 0px var(--red), 0 0 25px var(--red), 0 0 0 var(--red), 0 0 5px var(--red), 0 0 6px var(--red); */
+   /* animation: glitch 0.3s infinite; */
+   cursor: pointer;
+
+}
+.matches .header p:first-of-type{
+    background-color: var(--darkGrey);
+    animation: glitch 0.3s infinite;
+}
+.matches .header p::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.matches .header p::before{
+    height: 100%;
+    background-color: var(--darkGrey);
+    width: 0%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.matches .header p:hover::before {
+    width: 100%;
+  }
+
+@keyframes glow {
+    from{
+        text-shadow: 0 0px 0px transparent, 0 0 1px var(--red), 0 0px 1px transparent, 0 0 0px var(--red), 0 0 25px var(--red), 0 0 0 var(--red), 0 0 5px var(--red), 0 0 6px var(--red);
+    }
+    to{
+        text-shadow: 0 0px 0px transparent,  0 0px 25px transparent, 0 0 1px var(--red),0 0 25px var(--red),0 0 5px var(--red),  0 0 7px var(--red), 0 0 3px var(--red),  0 0 6px var(--red);
+    }
+}
+.matches .match{
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    margin-bottom: 2.5PX;
+    background-color: var(--mediumGrey);
+    transition: all 0.5s;
+}
+.matches .match:hover .vs{
+    animation: glitch 0.3s infinite;
+}
+
+.macthes .left{
+    width: 60%;
+}
+.matches .right{
+    width: 40%;
+}
+.matches .match .left .up {
+
+   display: flex;
+   justify-content:flex-start;
+   align-items: center;
+   gap: 20px;
+   height: 30%;
+}
+
+.matches .match .left .up p{
+    padding: 5px 30px;
+    position: relative;
+    background-color: #777;
+}
+
+.matches .match .left .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    gap:5px 
+}
+
+.matches .match .left .down a{
+    color: var(--red);
+    font-weight: 700;
+    transition: all 0.5s;
+    width: fit-content;
+}
+
+.matches .match .left .down a:hover{
+   color: black;
+}
+
+.matches .match .left .down p:nth-of-type(1)
+{
+    font-weight: 700;
+    font-size: 30px;
+    transition: all 0.5s;
+    width: fit-content;
+}
+
+/* .matches .match .left .down p:nth-of-type(1):hover{
+    color: var(--red);
+} */
+
+
+.matches .match .left .down p:nth-of-type(2){
+    color: #eee;
+    font-size: 15PX;
+}
+
+.team1 img,.team2 img{
+    width: 110px;
+    transition: all 1s;
+}
+
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.vs{
+    font-size: 30px;
+    width: fit-content;
+    text-align: center ;
+}
+@keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 var(--red),
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 var(--red),
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 var(--red),
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 var(--red),
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 var(--red),
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 var(--red),
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 var(--red),
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+  
+
+
+
+  .tour{
+    height:35vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--red);
+    background-image: url(../images/matches/abstract2.png);
+    background-position-y: 100%;
+    background-attachment: fixed;
+    z-index: 55555555555555;
+
+  }
+
+  .tour h3{
+    color: white;
+    font-size: 20px;
+  }
+
+  .tour h2{
+    color: var(--red);
+    font-size: 40px;
+  }
+
+
+
+  button, button::after {
+    padding: 10px 35px;
+    font-size: 15px;
+    background: linear-gradient( transparent 5%, rgba(180, 3, 3, 1) 5%);
+    border: 0;
+    color: white;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  button::after {
+    /* --slice-0: inset(50% 50% 50% 50%); */
+    /* --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0); */
+    /* display: block;
+    position: absolute; */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* background: linear-gradient(transparent 3%, #00E6F6 3%, #00E6F6 5%, rgba(180, 3, 3, 1) 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6; */
+    /* clip-path: var(--slice-0); */
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  button:hover::after {
+    animation: 1s glitch1;
+  }
+  
+  @keyframes glitch1 {
+    0% {
+   
+      transform: translate(-20px, -10px);
+    }
+    10% {
+    
+      transform: translate(10px, 10px);
+    }
+    20% {
+    
+      transform: translate(-10px, 10px);
+    }
+    30% {
+    
+      transform: translate(0px, 5px);
+    }
+    40% {
+      
+      transform: translate(-5px, 0px);
+    }
+    50% {
+     
+      transform: translate(5px, 0px);
+    }
+    60% {
+   
+      transform: translate(5px, 10px);
+    }
+    70% {
+
+      transform: translate(-10px, 10px);
+    }
+    80% {
+     
+      transform: translate(20px, -10px);
+    }
+    90% {
+  
+      transform: translate(-10px, 0px);
+    }
+    100% {
+     
+      transform: translate(0);
+    }
+  }

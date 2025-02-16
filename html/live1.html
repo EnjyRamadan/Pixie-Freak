@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+    <link rel="icon" href="../images/blacklogo.ico">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+          rel="stylesheet"/>
+          <!-- FONT AWESOME -->
+          <script src="https://kit.fontawesome.com/6b11d4a153.js" crossorigin="anonymous"></script>
+          <!-- jQuery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+          <!-- css -->
+          
+    <link rel="stylesheet" href="../css/live.css">
+</head>
+<body>
+   
+    <div class="container">
+       
+        <div class="nav">
+            <div class="logo"><img src="../images/logo.png" alt="logo" /></div>
+            <div class="nav-main">
+             
+            
+              <a href="../html/home.html">HOME</a>
+            <a href="../html/news.html">NEWS</a>
+            <a href="../html/about.html">ABOUT US</a>
+            <a href="../html/tournaments.html">TOURNAMENTS</a>
+            <a href="teams.html">TEAMS</a>
+            <a href="../html/streams.html">STREAMS</a>
+            <a href="../html/matches.html">MATCHES</a>
+                
+                <a class="bars"><i class="fa fa-bars" onclick="menu()" id="bars"></i></a>
+    
+                <div class="drop" id="drop">
+                  <ul>
+                    <li ><a class="drop-menu" href="../html/sponsers.html">SPONSERS</a></li>
+                <li ><a class="drop-menu" href="../html/gallery.html">GALLERY</a></li>
+                <li><a class="drop-menu" href="../html/feedback.html">Feedback</a></li>
+                <li><a class="drop-menu" href="../html/contact.html">Contact Us</a></li>
+                <li ><a class="drop-menu" href="../html/signLoginForm.html">SIGN UP / LOG IN</a></li>
+                  </ul>
+                </div>
+    
+             
+                  <i class="fa-solid fa-magnifying-glass search"></i>
+             
+               
+            </div>  
+         </div>
+        
+
+       <div class="stream">
+        <div data-dowall="63a378b11c73df002867a705" id="dowall"></div>
+        <div class="video">
+            <!-- <video loop autoplay controls MUTED id="vid">
+                <source src="../../images/pubg.MOV" type="" >
+                
+            </video>
+            -->
+            <!-- insert where you want your wall (change the data-dowall "code" to the code from your wall) -->
+           
+            <!-- <iframe id="vid" width="560" height="500" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <!-- <div class="livedot"><p>Live</p><div class="dot"></div></div> -->
+          
+        </div>
+  
+
+        </div>
+       </div>
+   
+
+    <script src="../js/live1.js"></script>
+   <script src="../js/signLoginForm.js"></script>
+    <script src="../js/home.js"></script>
+    <script async src="https://cdn.dowall.tv/embed.js?event=63a378b11c73df002867a703"></script>
+</body>
+</html>

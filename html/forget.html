@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--by Enjy-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIXIE FREAK</title>
+    <!-- LINK CSS 
+    by haidy--> 
+    <link rel="stylesheet" href="../css/forget.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet" />
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/6b11d4a153.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/587d92c94b.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="contact1">
+        <div class="container">
+           <!--video-->
+            <div class="nav">
+                <div class="logo"><img src="../images/logo.png" alt="logo" /></div>
+                <div class="nav-main">
+                    <!-- putting links inside href by Enjy -->
+                    <!-- html form by Haidy -->
+
+                    <a href="../html/home.html">HOME</a>
+                    <a href="../html/news.html">NEWS</a>
+                    <a href="../html/about.html">ABOUT US</a>
+                    <a href="../html/tournaments.html">TOURNAMENTS</a>
+                    <a href="teams.html">TEAMS</a>
+                    <a href="../html/streams.html">STREAMS</a>
+                    <a href="../html/matches.html">MATCHES</a>
+
+                    <a class="bars"><i class="fa fa-bars" onclick="menu()" id="bars"></i></a>
+
+                    <div class="drop" id="drop">
+                        <ul>
+                            <li><a class="drop-menu" href="../html/sponsers.html">SPONSERS</a></li>
+                            <li><a class="drop-menu" href="../html/gallery.html">GALLERY</a></li>
+                            <li><a class="drop-menu" href="../html/signLoginForm.html">SIGN UP / LOG IN</a></li>
+                        </ul>
+                    </div>
+
+
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+
+
+                </div>
+            </div>
+
+    <div class="conta">
+      
+
+        <form method="post" action="php/update.php" class="form" id="sign" name="myform"
+            onsubmit="">
+            <h2 class="title">Forget password</h2>
+            <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email2">
+                <div id="error3"></div>
+            </div>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="New password" name="password1">
+            </div>
+            <button type="submit" class="button2" id="btn21" name="forget" value="Forget">Update</button>
+        </form>
+    </div>
+    </div>
+    </section>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

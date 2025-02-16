@@ -1,0 +1,142 @@
+/*start footer*/
+/* By ENJY */
+/*By ENJY*/
+:root{
+  --red:rgba(180, 3, 3, 1);
+  --lightGrey:#333;
+  --darkGrey:#1a1a20;
+  --mediumGrey:#202028;
+  --mainFont: 'Cairo', sans-serif;
+}
+body{
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+*{
+font-family: var(--mainFont);
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+color: white;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: -10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444; 
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  border-radius: 15px;
+}
+/* scrollbar done */
+.contain{
+    max-width: 1170px;
+    flex-wrap: wrap;
+   }
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   ul{
+    list-style: none;
+   }
+   .footer{
+    background-color: var(--darkGrey);
+    padding: 70px 0;
+   }
+  
+   .footer-col{
+    width: 19%;
+    padding: 0 15px;
+   }
+   .footer-col h4{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-weight: bold;
+    position: relative;
+  
+   }
+   .footer-col1{
+    margin-top:70px ;
+   }
+   .footer-col1 li:not(:last-child){
+    margin-bottom: 45px;
+   }
+   .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: color #e91e63;
+    box-sizing: border-box;
+    width: 50px;
+   }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+  }
+  .footer-col ul li p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col ul li p:hover{
+    color: #ffffff;
+  }
+  .footer-col .social-icon{
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: 0.5s ease;
+  }
+  .footer-col .social :hover{
+    background-color: var(--red);
+    margin-left:150px;
+      margin: 15px 0;
+  }
+  /*footer end*/
+    
+   
+  
