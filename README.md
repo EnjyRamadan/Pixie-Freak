@@ -54,5 +54,5 @@ Welcome to **Pixie Freak**, an **E-Sports Organization** desktop website designe
 ---
 ## Demo Video
 
-[Graphica Demo - Watch here](https://youtu.be/edtAnWUR6Qo?si=x6wyFvO2IlRdJLA9)
+[Demo - Watch here](https://youtu.be/edtAnWUR6Qo?si=x6wyFvO2IlRdJLA9)
 
